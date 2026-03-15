@@ -1,6 +1,6 @@
 // main.js - Router principal con soporte completo para SPA
-import { DATA, renderFeed, renderGrid, renderEpisodio, renderSerie, renderCategoryPills } from '/prueba1./show.js';
-import { getEpisodioByDetailUrl, getSerieByUrl } from '/prueba1./episodios.js';
+import { DATA, renderFeed, renderGrid, renderEpisodio, renderSerie, renderCategoryPills } from './show.js';
+import { getEpisodioByDetailUrl, getSerieByUrl } from './episodios.js';
 import 'https://example.baltaanay.org./player.js';
 
 const PAGES = [
