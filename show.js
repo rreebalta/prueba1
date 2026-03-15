@@ -1,5 +1,5 @@
 // show.js - Vistas del feed, episodio, serie, etc. - VERSIÓN OPTIMIZADA
-import { getAllEpisodios, getSerieById, getEpisodiosBySerieId, getEpisodiosConSerie } from 'https://example.baltaanay.org./episodios.js';
+import { getAllEpisodios, getSerieById, getEpisodiosBySerieId, getEpisodiosConSerie } from './episodios.js';
 import { userStorage } from './storage.js';
 import 'https://example.baltaanay.org./player.js';
 
