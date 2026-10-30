@@ -32,40 +32,35 @@
         /* === PRIMERA SECCIÓN (Fondo con la imagen) === */
         header {
             text-align: center;
-            padding: 80px 20px;
-            /* Aquí aplicamos tu imagen como fondo */
+            padding: 100px 20px; /* Más espacio vertical al no tener la caja */
+            /* Imagen de fondo */
             background-image: url('https://i.pinimg.com/736x/22/8f/86/228f860771de3e4f00fdf3af15d946f6.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        /* Tarjeta semitransparente para que el texto se lea perfecto sobre el paisaje */
-        .header-content {
-            background-color: rgba(244, 241, 234, 0.85); /* Crema con transparencia */
-            display: inline-block;
-            padding: 30px 50px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .header-content h1 {
+        header h1 {
             font-size: 3.5rem;
             margin-bottom: 5px;
             letter-spacing: 1px;
+            /* Sombra para que resalte el texto sobre el paisaje */
+            text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
         }
 
-        .header-content h2 {
+        header h2 {
             font-family: 'Nunito', sans-serif;
             font-size: 1.5rem;
             font-weight: 600;
             color: #222;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
         }
 
-        .header-content p {
+        header p {
             font-size: 0.9rem;
-            color: #555;
+            color: #333;
             margin-top: 5px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
         }
 
         /* === SECCIÓN DE ICONOS === */
@@ -173,7 +168,7 @@
         }
 
         footer img {
-            width: 120px;
+            width: 150px; /* Ajustado para tu logo webp */
             height: auto;
             margin-bottom: 15px;
         }
@@ -194,9 +189,9 @@
 
         /* === RESPONSIVE (CELULARES) === */
         @media (max-width: 768px) {
-            .header-content { padding: 20px 30px; }
-            .header-content h1 { font-size: 2.5rem; }
-            .header-content h2 { font-size: 1.2rem; }
+            header { padding: 60px 20px; }
+            header h1 { font-size: 2.5rem; }
+            header h2 { font-size: 1.2rem; }
             .icon-section { gap: 20px; padding: 30px 10px; }
             .icon-item img { width: 60px; height: 60px; }
             .teachings-title { font-size: 2rem; padding-top: 30px; }
@@ -207,13 +202,11 @@
 </head>
 <body>
 
-    <!-- PRIMERA SECCIÓN (Fondo de paisaje con texto) -->
+    <!-- PRIMERA SECCIÓN (Texto directo sobre la imagen) -->
     <header>
-        <div class="header-content">
-            <h1>Niki Chiton Jesus</h1>
-            <h2>Somos salvos por gracia</h2>
-            <p>Efesios 2:8-9</p>
-        </div>
+        <h1>Niki Chiton Jesus</h1>
+        <h2>Somos salvos por gracia</h2>
+        <p>Efesios 2:8-9</p>
     </header>
 
     <!-- SECCIÓN DE ICONOS (Reemplaza los SRC con tus URLs de imágenes PNG) -->
@@ -268,8 +261,8 @@
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <!-- AQUÍ VA TU IMAGEN DEL LOGO (Pez con cruz) -->
-        <img src="https://via.placeholder.com/150x80/1b223c/ffffff?text=Logo+Aqui" alt="Logo Niki Chiton Jesus">
+        <!-- Logo de tu sitio web -->
+        <img src="https://www.nikichitonjesus.org/web/image/1576-eac80287/logo1.webp" alt="Logo Niki Chiton Jesus">
         <h2>Niki Chiton Jesus</h2>
         <h3>Amor • Gracia • Fe</h3>
     </footer>
